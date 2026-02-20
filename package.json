@@ -2,9 +2,10 @@
   "name": "agritrust-ai",
   "version": "1.0.0",
   "description": "AgriTrust AI - Full-stack agricultural supply chain transparency platform",
+  "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
-    "build": "echo Build completed"
+    "build": "cd client && npm install && npm run build"
   },
   "keywords": [
     "agriculture",
