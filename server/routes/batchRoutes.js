@@ -3,6 +3,11 @@ const { createBatch, getBatchById, getAIDashboard } = require('../controllers/ba
 
 const router = express.Router();
 
+// @route   GET /api/batches/dashboard/ai
+// @desc    Get AI dashboard insights
+// @access  Public
+router.get('/dashboard/ai', getAIDashboard);
+
 // @route   POST /api/batches
 // @desc    Create a new batch
 // @access  Public
@@ -12,10 +17,5 @@ router.post('/', createBatch);
 // @desc    Get batch by ID
 // @access  Public
 router.get('/:id', getBatchById);
-
-// @route   GET /api/batches/dashboard/ai
-// @desc    Get AI dashboard insights
-// @access  Public
-router.get('/dashboard/ai', getAIDashboard);
 
 module.exports = router;
