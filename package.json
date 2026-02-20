@@ -1,0 +1,28 @@
+{
+  "name": "agritrust-ai",
+  "version": "1.0.0",
+  "description": "AgriTrust AI - Full-stack agricultural supply chain transparency platform",
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+    "start": "node server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev"
+  },
+  "keywords": [
+    "agriculture",
+    "blockchain",
+    "ai",
+    "supply-chain",
+    "transparency"
+  ],
+  "author": "AgriTrust AI",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.0"
+  }
+}
